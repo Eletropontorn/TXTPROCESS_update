@@ -36,7 +36,7 @@ function processarArquivo() {
     const link = document.getElementById("downloadLink");
     if (link.href) URL.revokeObjectURL(link.href);
     link.href = url;
-    link.download = "matriculas_formatadas.txt";
+    link.download = "arquivo_processado.txt";
     link.style.display = "inline-block";
 
     document.getElementById("mensagem").innerText = "✅ Arquivo processado com sucesso!";
@@ -44,3 +44,4 @@ function processarArquivo() {
 
   reader.readAsText(file);
 }
+
