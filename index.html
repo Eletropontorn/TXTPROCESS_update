@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eletroponto - Processador de Batidas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+  <a href="https://wa.me/558441410644" target="_blank">
+    <img src="logo.png" alt="Logo Eletroponto" class="logo">
+  </a>
+  <h1>Processador de Batidas</h1>
+  <input type="file" id="arquivoEntrada" accept=".txt">
+  <div class="botao-container">
+    <button onclick="processarArquivo()">Processar</button>
+    <a id="downloadLink" style="display:none;" download="batidas_processadas.txt">Baixar</a>
+  </div>
+  <p id="mensagem"></p>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    Desenvolvido por<a href="https://www.eletropontorn.com.br/" target="_blank">Eletroponto - Tecnologia em Ponto e Acesso</a>
+  </footer>
+</body>
+</html>

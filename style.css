@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   
+  margin: 0;           
+  padding: 10px;       
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  text-align: center;
+  max-width: 900px;        
+  width: 100%;             
+  box-sizing: border-box;  
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.container .logo {
+  display: block;       
+  margin: 0 auto;       
+  max-width: 100%;      
+  height: auto;
+  padding: 0;
+}
+
+.logo:hover {
+  transform: scale(1.05); 
+}
+
+h1 {
+  font-size: 30px; 
+  color: #333333; 
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+  font-weight: 700; 
+  letter-spacing: 1px; 
+}
+
+.botao-container {
+  display: flex;
+  justify-content: center;   
+  flex-wrap: wrap;           
+  gap: 10px;                 
+  margin-top: 10px;
+}
+
+input, button, a {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0f47ab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: cornflowerblue;  
+}
+
+#arquivoEntrada {
+  display: block;      
+  margin: 10px auto;   
+  max-width: 100%;     
+  box-sizing: border-box;
+}
+
+#downloadLink {
+  display: inline-block;
+  background-color: #0f47ab;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#downloadLink:hover {
+  background-color: cornflowerblue;
+}
+
+#mensagem {
+  margin-top: 20px;
+  color: green;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #e4e4e4;
+  color: #666666;
+  width: 100%;              
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15); 
+  z-index: 999;              
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 6px;
+  color: #50359b;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+  color: #2b1a66;  
+  text-shadow: 0 0 5px rgba(80, 53, 155, 0.4);
+}
